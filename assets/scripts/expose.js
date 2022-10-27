@@ -12,6 +12,8 @@ function init() {
   //volume's horn image
   const playSound =document.querySelector('button');
   const audioFile = document.querySelector('audio');
+  //create my confetti
+  const myConfetti = new JSConfetti()
 
   //add event listener for the drop down selector
   dropdown.addEventListener('change', function(){
@@ -50,6 +52,7 @@ function init() {
   playSound.addEventListener('click', function() {
     if (dropdown.value == "party-horn") {
       //get the confetti!
+      myConfetti.addConfetti();
     }
     //play the audio
     audioFile.play();
