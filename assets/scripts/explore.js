@@ -45,7 +45,8 @@ function init() {
         break;
       }
     }
-    synth.speak(utterThis);
+    synth.speak(utterThis); //play the sound
+    //change the image back when it's done speaking
     utterThis.addEventListener('end', function(){
       faceImg.src = "assets/images/smiling.png";
     })
