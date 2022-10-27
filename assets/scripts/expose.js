@@ -7,12 +7,11 @@ function init() {
   const dropdown = document.getElementById('horn-select'); //the selector for horn
   const hornImg = document.querySelector("[src='assets/images/no-image.png']");
   //image of the horn selected
-  const volumeControl = document.getElementById("volume-controls"); //volume controller
   const volumeSlide = document.querySelector("[type='range']") //volume slide
   const volumeImg = document.querySelector("[src='assets/icons/volume-level-2.svg']");
   //volume's horn image
   const playSound =document.querySelector('button');
-  const audioFile = document.getElementsByClassName('hidden');
+  const audioFile = document.querySelector('audio');
 
   //add event listener for the drop down selector
   dropdown.addEventListener('change', function(){
