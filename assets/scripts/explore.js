@@ -35,6 +35,8 @@ function init() {
     //create the text to speak
     //choose the selected voice
     const selectedOption = voiceSelect.selectedOptions[0].getAttribute('data-name');
+    //get the upadted voice list
+    let voices = window.speechSynthesis.getVoices();
     for (let i = 0; i < voices.length ; i++) {
       //find the voice with the matching name
       if (voices[i].name === selectedOption) {
