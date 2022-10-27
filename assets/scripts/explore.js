@@ -31,6 +31,7 @@ function init() {
   })
   //when the speak button is pressed
   voiceButton.addEventListener('click', function() {
+    faceImg.src = "assets/images/smiling-open.png";
     const utterThis = new SpeechSynthesisUtterance(textsToVoice.value);
     //create the text to speak
     //choose the selected voice
@@ -45,5 +46,8 @@ function init() {
       }
     }
     synth.speak(utterThis);
-  })
+    utterThis.addEventListener('end', function(){
+      faceImg.src = "assets/images/smiling.png";
+    })
+  }) 
 }
