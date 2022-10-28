@@ -2,6 +2,6 @@
 Ruilin Hu
 Link to introduction-to-github repo: https://github.com/hurl365/introduction-to-github
 
-Link to expose: /expose.html
+Link to expose: [/expose.html](/expose.html)
 
-Link to explore: /explore.html
+Link to explore: [/explore.html](/explore.html)
